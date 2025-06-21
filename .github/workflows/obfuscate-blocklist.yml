@@ -7,6 +7,10 @@ on:
     paths:
       - block.txt
 
+concurrency:
+  group: obfuscate-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   obfuscate-blocklist:
     runs-on: ubuntu-latest
