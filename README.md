@@ -31,7 +31,7 @@ For details about updates and changes to this repository, take a look at the [CH
 | `allow.{FILE_HASH}.{RANDOM_HASH}.txt` | Consolidates whitelisted domains into a single file, with syntax verification for consistency. The file is regularly rotated and renamed based on a random string. |
 | `meta.json` | Provides current filenames for blocklist and allowlist, enabling automated access without hardcoded URLs. |
 
-> **Note:** Wondering about `FILE_HASH` or `RANDOM_HASH`? [See this explanation.](https://github.com/Bon-Appetit/porn-domains/discussions/75)
+**Note:** Wondering about `FILE_HASH` or `RANDOM_HASH`? [See this explanation.](https://github.com/Bon-Appetit/porn-domains/discussions/75)
 
 ## 📜 Policy
 
