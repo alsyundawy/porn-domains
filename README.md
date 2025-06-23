@@ -4,6 +4,9 @@
 
 This list compiles a variety of domains related to adult content, primarily focusing on pornographic websites. Instead of creating yet another list from scratch, it aggregates the excellent work done by others into one big list.
 
+> [!INFO]
+> FAQ: [Why does this repository appear in my browser console log?](https://github.com/Bon-Appetit/porn-domains/blob/main/FAQ.md#why-does-this-repository-appear-in-my-browser-console-log)
+
 > [!CAUTION]
 > 🚩 [Upcoming changes to prevent direct use of raw URLs](https://github.com/Bon-Appetit/porn-domains/discussions/75)
 
