@@ -7,9 +7,6 @@ This list compiles a variety of domains related to adult content, primarily focu
 > [!NOTE]
 > FAQ: [Why does this repository appear in my browser console log?](https://github.com/Bon-Appetit/porn-domains/blob/main/FAQ.md#why-does-this-repository-appear-in-my-browser-console-log)
 
-> [!CAUTION]
-> 🚩 [Upcoming changes to prevent direct use of raw URLs](https://github.com/Bon-Appetit/porn-domains/discussions/75)
-
 > [!IMPORTANT]
 > ⚠️ **License change**: Please be aware that starting August 1st, 2025, the license for this project will change to [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). [Read this for more details](https://github.com/Bon-Appetit/porn-domains/discussions/73)
 
@@ -33,6 +30,8 @@ For details about updates and changes to this repository, take a look at the [CH
 | `block.{FILE_HASH}.{RANDOM_HASH}.txt` | Compilation of domains from multiple blacklist sources, with syntax checks, deduplication, and whitelist exclusions. The file is regularly rotated and renamed based on a random string. |
 | `allow.{FILE_HASH}.{RANDOM_HASH}.txt` | Consolidates whitelisted domains into a single file, with syntax verification for consistency. The file is regularly rotated and renamed based on a random string. |
 | `meta.json` | Provides current filenames for blocklist and allowlist, enabling automated access without hardcoded URLs. |
+
+> **Note:** Wondering about `FILE_HASH` or `RANDOM_HASH`? [See this explanation.](https://github.com/Bon-Appetit/porn-domains/discussions/75)
 
 ## 📜 Policy
 
