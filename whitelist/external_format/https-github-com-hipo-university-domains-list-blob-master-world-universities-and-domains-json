@@ -1,6 +1,6 @@
 # URL: https://github.com/Hipo/university-domains-list/blob/master/world_universities_and_domains.json
-# LAST UPDATE (OF DATA): 2025-02-28
-# LAST DATA PROCESSING (DATE): 2025-03-03
+# LAST UPDATE (OF DATA): 2025-06-13
+# LAST DATA PROCESSING (DATE): 2025-06-25
 # COMMENTS: Extracted (JSON format), sorted, deduplicated
 29mayis.edu.tr
 4cd.edu
@@ -414,6 +414,7 @@ ar.wroc.pl
 aryainstitutejpr.com
 asa.edu
 asahikawa-med.ac.jp
+asahikawa-nct.ac.jp
 asahikawa-u.ac.jp
 asahi-u.ac.jp
 asau.am
@@ -776,7 +777,6 @@ bingol.edu.tr
 bi.no
 binus.ac.id
 biola.edu
-bip.lon.ac.uk
 bircham.edu
 birjand.ac.ir
 biruni.edu.tr
@@ -1099,6 +1099,7 @@ cbu.edu.tr
 cbu.edu.zm
 ccaa.edu
 ccac.edu
+cca.edu
 ccaurora.edu
 ccbc.ca
 ccbc.edu
@@ -1147,13 +1148,13 @@ cecil.edu
 cecos.edu.pk
 cedarvalleycollege.edu
 cedarville.edu
-cema.edu.ar
 centenary.edu
 centennialcollege.ca
 centralaz.edu
 central.edu
 central.edu.gh
 centrale-marseille.fr
+centralesupelec.fr
 centralgatech.edu
 centralstate.edu
 central.ucv.ro
@@ -1270,6 +1271,7 @@ cit.ie
 citruscollege.edu
 city.ac.uk
 city.edu.my
+citystgeorges.ac.uk
 citytech.cuny.edu
 cityu.bg
 cityu.edu
@@ -1930,6 +1932,7 @@ edhec.ac.ma
 edinboro.edu
 edisonohio.edu
 edogawa-u.ac.jp
+edu.asahikawa-nct.ac.jp
 education.ivanovo.ru
 edu.edhec.com
 edu.escp.eu
@@ -3330,6 +3333,7 @@ iitkgp.ernet.in
 iitm.ac.in
 iitp.ac.in
 iitr.ac.in
+iitrpr.ac.in
 iiuc.ac.bd
 iiuedu.ie
 iiu.edu.my
@@ -3618,6 +3622,7 @@ iubat.edu
 iub.edu
 iub.edu.bd
 iub.edu.pk
+iubh-fernstudium.de
 iubnt.yar.ru
 iubs.co.uk
 iucn.edu.my
@@ -4081,6 +4086,7 @@ knightsbridgeuniversity.com
 knou.ac.kr
 knox.edu
 knoxvillecollege.edu
+knruhs.telangana.gov.in
 knsu.ac.kr
 kntu.ac.ir
 knua.ac.kr
@@ -4371,7 +4377,6 @@ lazarski.pl
 lbcc.edu
 lbhc.edu
 lboro.ac.uk
-lbs.lon.ac.uk
 lbtu.lv
 lbu.edu.np
 lbwcc.edu
@@ -4481,7 +4486,7 @@ lnu.edu.ua
 lnu.evis.net.ph
 loc.edu
 lockhaven.edu
-lon.ac.uk
+london.ac.uk
 londonmet.ac.uk
 lonestar.edu
 longwood.edu
@@ -4782,6 +4787,7 @@ mgu.ac.in
 mgu.ac.jp
 mgu.bg
 mgul.ac.ru
+mguniversity.ac.in
 mhcc.edu
 mh-hannover.de
 mh-luebeck.de
@@ -5301,6 +5307,7 @@ nileu.edu.eg
 nilevalley.edu.sd
 nimhans.kar.nic.in
 nims.ap.nic.in
+nims.edu.in
 nims.net.in
 nipissingu.ca
 nirmauni.ac.in
@@ -5461,7 +5468,6 @@ nsau.edu.ru
 nsbm.lk
 nscad.ns.ca
 nscc.edu
-nsit.ac.in
 nsmc.edu.cn
 nsmu.ru
 nstu.edu.bd
@@ -5474,6 +5480,7 @@ nsuk.edu.ng
 nsula.edu
 nsuok.edu
 nsu.ru
+nsut.ac.in
 nsysu.edu.tw
 ntb.ch
 ntca.edu.tw
@@ -5757,7 +5764,8 @@ paisley.ac.uk
 pakaims.edu
 pakaims.edu.pk
 pakistanhomoeopathy.com
-palermo.edu.ar
+palamuruuniversity.ac.in
+palermo.edu
 palmbeachstate.edu
 palomar.edu
 paloverde.edu
@@ -5887,6 +5895,7 @@ pittstate.edu
 pitzer.edu
 piu.ac.ke
 piup.edu.my
+pjtau.edu.in
 pjwstk.edu.pl
 pkb.edu.my
 pk.edu.pl
@@ -6440,6 +6449,7 @@ saskweb.com
 sas-sd.net
 sastra.ac.in
 sastra.edu
+satavahana.ac.in
 sathyabamauniv.ac.in
 sau.ac.bd
 sau.ac.th
@@ -6625,6 +6635,7 @@ sgu.edu
 sgu.edu.cn
 sgu.edu.vn
 sgu.ernet.in
+sgul.ac.uk
 sgu.ru
 shahed.ac.ir
 shahroodut.ac.ir
@@ -6776,6 +6787,7 @@ skhu.ac.kr
 skidmore.edu
 skku.ac.kr
 skku.edu
+skltshu.ac.in
 skmu.edu.in
 sku.ac.ir
 skuastkashmir.ac.in
@@ -7056,18 +7068,21 @@ student.g.nwu.ac.za
 student.gsa.ac.uk
 student.hs-anhalt.de
 student.karazin.ua
+student.kuleuven.be
 student.lamk.fi
 student.laurea.fi
 student.lboro.ac.uk
 student.lut.fi
 student.maastrichtuniversity.nl
 student.murdoch.edu.au
+student.purdueglobal.edu
 student.scad.edu
 student.sdccd.edu
 students.finki.ukim.mk
 students.jedlik.eu
 students.olin.edu
 student.spsmb.cz
+student.staffs.ac.uk
 students.vizja.pl
 student.tudelft.nl
 student.uliege.be
@@ -7078,6 +7093,7 @@ student.uts.edu.au
 student.wab.edu.pl
 student.westherts.ac.uk
 stud.hs-hannover.de
+stud.vilniustech.lt
 stu.edu
 stu.edu.cn
 stu.edu.gh
@@ -7328,6 +7344,7 @@ tedu.edu.tr
 tees.ac.uk
 teh-lavasan.pnu.ac.ir
 teikyo-u.ac.jp
+telanganauniversity.ac.in
 telkomuniversity.ac.id
 teluguuniversity.ac.in
 teluq.uquebec.ca
@@ -7354,6 +7371,7 @@ tfu.ac.jp
 tgnu.tarena.tj
 tgpi.ttn.ru
 tgsha.ru
+tha.de
 th-brandenburg.de
 th-deg.de
 theatrins-yar.ru
@@ -7506,6 +7524,7 @@ trine.edu
 trinidadstate.edu
 trinitybiblecollege.edu
 trinity-cm.ac.uk
+trinitycollegebristol.ac.uk
 trinitydc.edu
 trinity.edu
 trinity.edu.gh
@@ -7540,6 +7559,7 @@ tsu.ru
 tsuru.ac.jp
 tsurumi-u.ac.jp
 tsu.tula.ru
+tsvu.nic.in
 ttc.ryazan.ru
 ttit.edu.tw
 ttmc.edu.cn
@@ -7874,6 +7894,7 @@ uc.edu.py
 uc.edu.ve
 uce.edu.do
 ucel.edu.ar
+ucema.edu.ar
 ucem.edu.mx
 ucem.edu.ni
 ucentral.cl
@@ -8429,6 +8450,7 @@ umoderna.pt
 umo.edu
 umoncton.ca
 umontemorelos.edu.mx
+umontpellier.fr
 umontreal.ca
 ump.ac.ma
 ump.ac.za
@@ -9132,6 +9154,7 @@ univ-tlemcen.dz
 univ-tln.fr
 univ-tlse1.fr
 univ-tlse2.fr
+univ-tlse3.fr
 univ-toamasina.mg
 univ-toliara.mg
 univ-toulouse.fr
@@ -9737,6 +9760,7 @@ uth.edu.pl
 uth.gr
 uth.hn
 uthm.edu.my
+uth.pl
 utibet.edu.cn
 utica.edu
 utkaluniv.org
