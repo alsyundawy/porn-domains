@@ -24,3 +24,7 @@ issue_templates:
   - name: "Remove Source"
     description: "Request to remove a source due to inaccuracy or false positives."
     file: 4-remove_source.yml
+
+  - name: "Bulk Add/Remove Domains"
+    description: "Report multiple domains to be added to or removed from the blocklist."
+    file: 5-bulk_domain_report.yml

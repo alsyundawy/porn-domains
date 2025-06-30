@@ -1,0 +1,38 @@
+# .github/ISSUE_TEMPLATE/5-bulk_domain_report.yml
+name: "Bulk Add/Remove Domains"
+description: "Report multiple domains to be added to or removed from the blocklist."
+title: "[Bulk Domain Report]: <add/remove> <number of domains> domains"
+labels: ["bulk domain report"]
+assignees: []
+body:
+  - type: dropdown
+    id: action
+    attributes:
+      label: "Action"
+      description: "Do you want to add or remove these domains?"
+      options:
+        - "Add to blocklist"
+        - "Remove from blocklist"
+    validations:
+      required: true
+
+  - type: textarea
+    id: domains
+    attributes:
+      label: "Domains"
+      description: "List the domains you want to add or remove. One domain per line."
+      placeholder: |
+        example1.com
+        example2.net
+        example3.org
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Reason / Evidence / Notes"
+      description: "Provide your reasoning, evidence, or any relevant notes for this bulk action."
+      placeholder: "E.g., source, explanation, links, or screenshots."
+    validations:
+      required: false
