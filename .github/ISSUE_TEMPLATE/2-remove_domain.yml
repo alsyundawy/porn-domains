@@ -1,38 +1,56 @@
 # .github/ISSUE_TEMPLATE/2_remove_domain.yml
 name: "Remove Domain"
-description: "Request to remove a domain from the blocklist."
+description: "Request to remove a domain from the blocklist or allowlist."
 title: "[Remove Domain]: <domain name>"
 labels: ["remove domain"]
 assignees: []
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Before requesting the removal of a domain, please review our [removal criteria](../../POLICY.md#criteria-for-removal) and [contributing guidelines](../../CONTRIBUTING.md). Use the [Domain Search Tool](https://bon-appetit.github.io/domain-search/) to check whether the domain is currently listed.
+
   - type: input
     id: domain_name
     attributes:
       label: "Domain Name"
-      description: "Enter the domain to be removed."
+      description: "Please enter the domain you want to remove."
       placeholder: "example.com"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: list_type
+    attributes:
+      label: "List Type"
+      description: "Please select whether this domain should be removed from the blocklist or allowlist."
+      options:
+        - "Blocklist (remove from blocklist)"
+        - "Allowlist (remove from allowlist)"
     validations:
       required: true
 
   - type: dropdown
     id: reason
     attributes:
-      label: "Reason for Removal"
-      description: "Select the reason why this domain should be removed."
+      label: "Reason"
+      description: "Please select the reason for removing this domain."
       options:
-        - "Legitimate Website (Non-Adult Content)"
-        - "Medical / Educational Resource"
-        - "Misclassified (Not Pornographic)"
-        - "Adult Content, but Allowed in Some Contexts"
-        - "Other (Specify in Additional Information)"
+        - "Blocklist: False Positive (Not Adult Content)"
+        - "Blocklist: Legitimate Site"
+        - "Blocklist: Educational / Medical Use"
+        - "Blocklist: Other (Specify in Additional Information)"
+        - "Allowlist: No Longer Meets Criteria"
+        - "Allowlist: Added in Error"
+        - "Allowlist: Other (Specify in Additional Information)"
     validations:
       required: true
 
   - type: textarea
-    id: additional_info
+    id: remarks
     attributes:
       label: "Additional Information / Evidence"
-      description: "Provide extra details, links, or screenshots supporting your request."
-      placeholder: "E.g., screenshots, references, or explanations."
+      description: "Please provide extra details, links, or screenshots supporting your request."
+      placeholder: "E.g., screenshots, references, or specific URLs."
     validations:
       required: false

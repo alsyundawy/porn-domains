@@ -12,7 +12,9 @@ body:
       description: "Do you want to add or remove these domains?"
       options:
         - "Add to blocklist"
+        - "Add to allowlist"
         - "Remove from blocklist"
+        - "Remove from allowlist"
     validations:
       required: true
 
@@ -28,11 +30,34 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: dropdown
     id: reason
     attributes:
-      label: "Reason / Evidence / Notes"
-      description: "Provide your reasoning, evidence, or any relevant notes for this bulk action."
+      label: "Reason"
+      description: "Please select the main reason for this bulk action."
+      options:
+        - "Block: Pornographic Content"
+        - "Block: Cam Site / Live Streams"
+        - "Block: Adult Dating / Escort Services"
+        - "Block: Ads / Redirects to Adult Content"
+        - "Block: Misleading / Deceptive Adult Site"
+        - "Block: Revenge Porn / Non-Consensual Content"
+        - "Allow: False Positive (Not Adult Content)"
+        - "Allow: Legitimate Site Blocked"
+        - "Allow: Educational / Medical Use"
+        - "Remove: False Positive (Not Adult Content)"
+        - "Remove: Legitimate Site"
+        - "Remove: Educational / Medical Use"
+        - "Remove: No Longer Meets Criteria"
+        - "Other (Specify in Additional Information)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: remarks
+    attributes:
+      label: "Additional Information / Evidence"
+      description: "Provide extra details, links, or screenshots supporting your request."
       placeholder: "E.g., source, explanation, links, or screenshots."
     validations:
       required: false
