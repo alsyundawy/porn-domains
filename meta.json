@@ -1,4 +1,14 @@
 {
-  "blocklist": "block.8721e0be94.v8rpqp.txt",
-  "allowlist": "allow.61f9c283e3.eo7s0s.txt"
+  "blocklist": {
+    "name": "block.8721e0be94.v8rpqp.txt",
+    "updated": null,
+    "lines": null,
+    "size": null
+  },
+  "allowlist": {
+    "name": "allow.61f9c283e3.eo7s0s.txt",
+    "updated": null,
+    "lines": null,
+    "size": null
+  }
 }

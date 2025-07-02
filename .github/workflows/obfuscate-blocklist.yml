@@ -22,32 +22,32 @@ jobs:
         id: pull_rebase_latest
         run: |
           set -e
+
           git pull --rebase "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" main
 
-      - name: Check if block.txt exists
+      - name: Check if required files exist
+        id: check_required_files
         run: |
           set -e
-          if [ ! -f block.txt ]; then
-            echo "block.txt not found"
-            exit 1
-          fi
 
-      - name: Check for meta.json
-        run: |
-          set -e
-          if [ ! -f meta.json ]; then
-            echo "meta.json not found"
-            exit 1
-          fi
+          for file in block.txt meta.json; do
+            if [ ! -f "$file" ]; then
+              echo "File '$file' not found"
+              exit 1
+            fi
+          done
 
-      - name: Generate random string and rename block.txt
+      - name: Generate new filename for blocklist
         id: hash_and_rename
         run: |
           set -e
+
           FILE_HASH=$(sha1sum block.txt | awk '{print $1}' | cut -c1-10)
-          RANDOM_HASH=$(openssl rand -base64 24 | tr -dc 'a-z0-9' | head -c 6)
           echo "File hash: $FILE_HASH"
+
+          RANDOM_HASH=$(openssl rand -base64 24 | tr -dc 'a-z0-9' | head -c 6)
           echo "Random hash: $RANDOM_HASH"
+
           NEWFILE="block.${FILE_HASH}.${RANDOM_HASH}.txt"
           git mv block.txt "$NEWFILE"
           echo "newfile=$NEWFILE" >> $GITHUB_ENV
@@ -56,7 +56,8 @@ jobs:
         id: remove_old_block
         run: |
           set -e
-          OLD=$(jq -r '.blocklist // empty' meta.json)
+
+          OLD=$(jq -r '.blocklist.name // empty' meta.json)
           if [ -n "$OLD" ] && [ -f "$OLD" ]; then
             echo "Removing old blocklist file: $OLD"
             git rm "$OLD"
@@ -64,19 +65,40 @@ jobs:
             echo "No old blocklist file to remove"
           fi
 
-      - name: Update meta.json with new blocklist file
-        id: update_meta
+      - name: Update meta.json with blocklist info
+        id: update_meta_blocklist
         run: |
           set -e
+
           NEWFILE="${{ env.newfile }}"
-          jq --arg fn "$NEWFILE" '.blocklist = $fn' meta.json > meta.tmp && mv meta.tmp meta.json
+          echo "New filename: $NEWFILE"
+
+          BLOCK_TS=$(stat -c %Y "$NEWFILE")
+          UPDATED=$(date -u -d "@$BLOCK_TS" +"%Y-%m-%dT%H:%M:%SZ")
+          echo "Update: $UPDATED"
+
+          LINES=$(grep -c '^' "$NEWFILE")
+          echo "Lines: $LINES"
+
+          SIZE=$(stat -c %s "$NEWFILE")
+          echo "Size: $SIZE"
+
+          jq --arg filename "$NEWFILE" \
+            --arg updated "$UPDATED" \
+            --argjson lines "$LINES" \
+            --argjson size "$SIZE" \
+            '.blocklist = {name: $filename, updated: $updated, lines: $lines, size: $size}' \
+            meta.json > meta.tmp && mv meta.tmp meta.json
 
       - name: Commit and push changes
         id: commit_and_push
         run: |
           set -e
+
+          NEWFILE="${{ env.newfile }}"
+
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add "${{ env.newfile }}" meta.json
+          git add "$NEWFILE" meta.json
           git commit -m "[ACTION] Obfuscate blocklist" || echo "Nothing to commit"
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
