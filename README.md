@@ -37,7 +37,7 @@ For details about updates and changes to this repository, take a look at the [Ch
 | `allow.{FILE_HASH}.{RANDOM_HASH}.txt` | Consolidates whitelisted domains into a single file, with syntax verification for consistency. The file is regularly rotated and renamed based on a random string. <br><br> ![Allowlist Lines](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBon-Appetit%2Fporn-domains%2Frefs%2Fheads%2Fmain%2Fmeta.json&query=allowlist.lines&style=flat-square&label=Number%20of%20domains&labelColor=%23555555&color=%23007EC6&cacheSeconds=43200) ![Allowlist Updated](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBon-Appetit%2Fporn-domains%2Frefs%2Fheads%2Fmain%2Fmeta.json&query=allowlist.updated&style=flat-square&label=Last%20update&labelColor=%23555555&color=%23007EC6&cacheSeconds=43200) ![Allowlist Size](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBon-Appetit%2Fporn-domains%2Frefs%2Fheads%2Fmain%2Fmeta.json&query=allowlist.size&style=flat-square&label=Size%20in%20bytes&labelColor=%23555555&color=%23007EC6&cacheSeconds=43200) |
 | `meta.json` | Provides current filenames for blocklist and allowlist, enabling automated access without hardcoded URLs. |
 
-**Note:** Wondering about `FILE_HASH` or `RANDOM_HASH`? [See this explanation.](https://github.com/Bon-Appetit/porn-domains/discussions/75)
+**Note:** Wondering about `FILE_HASH` or `RANDOM_HASH`? [Please read this.](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/CHANGELOG.md#2025-06-20)
 
 ## 📜 Policy
 
