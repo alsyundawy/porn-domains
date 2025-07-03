@@ -11,6 +11,10 @@ This changelog documents changes to the structure, file handling, and background
   - `{RANDOM_HASH}` is a 6-character random alphanumeric string (`a–z`, `0–9`).
   - `{FILE_HASH}` can be used to detect content changes, while `{RANDOM_HASH}` ensures the filename always gets renamed.
 
+## 2025-06-02
+
+- Update `meta.json` to modify its structure and include additional information about the lists. For each list, it includes the file name, the last updated timestamp, the number of lines it contains (basically number of domains), and its size in bytes.
+
 ## 2025-06-18
 
 - Automatic updates of the domain lists have resumed.
