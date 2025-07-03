@@ -2,7 +2,7 @@
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-%230D0C22?style=flat-square&logo=buymeacoffee&logoColor=%23FFFFFF&label=DONATE&labelColor=%230D0C22&color=%23FFDD00&cacheSeconds=43200)](https://buymeacoffee.com/CodeAlDente) ![License](https://img.shields.io/github/license/Bon-Appetit/porn-domains?style=flat)
 
-![Watchers](https://img.shields.io/github/watchers/Bon-Appetit/porn-domains?style=flat-square&cacheSeconds=43200) ![Forks](https://img.shields.io/github/forks/Bon-Appetit/porn-domains?style=flat-square&cacheSeconds=43200) ![Repo stars](https://img.shields.io/github/stars/Bon-Appetit/porn-domains?style=flat-square&cacheSeconds=43200) ![Commit activity](https://img.shields.io/github/commit-activity/m/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200)
+![Watchers](https://img.shields.io/github/watchers/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200) ![Forks](https://img.shields.io/github/forks/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200) ![Repo stars](https://img.shields.io/github/stars/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200) ![Commit activity](https://img.shields.io/github/commit-activity/m/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200)
 
 </div>
 
