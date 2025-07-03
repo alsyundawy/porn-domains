@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form to report multiple domains for addition to or removal from the blocklist or allowlist. Before submitting, please review our [policy](https://github.com/Bon-Appetit/porn-domains/blob/main/POLICY.md) and [contributing guidelines](https://github.com/Bon-Appetit/porn-domains/blob/main/CONTRIBUTING.md). Use the [Domain Search Tool](https://bon-appetit.github.io/domain-search/) to check the domains to avoid duplicates or errors.
+        Use this form to report multiple domains for addition to or removal from the blocklist or allowlist. Before submitting, please review our [policy](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/POLICY.md) and [contributing guidelines](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/CONTRIBUTING.md). Use the [Domain Search Tool](https://bon-appetit.github.io/domain-search/) to check the domains to avoid duplicates or errors.
 
   - type: dropdown
     id: action

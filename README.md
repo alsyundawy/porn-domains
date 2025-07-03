@@ -14,7 +14,7 @@ This list compiles a variety of domains related to adult content, primarily focu
 > ⚠️ **LICENSE UPDATE**: Please note that starting August 1st, 2025, this project will transition from the `MIT license` to the `Creative Commons BY-NC-SA 4.0` license. [Learn more about this change](https://github.com/Bon-Appetit/porn-domains/discussions/73).
 
 > [!NOTE]
-> FAQ: [Why Does This Repository Appear In My Browser Console Log?](https://github.com/Bon-Appetit/porn-domains/blob/main/FAQ.md#why-does-this-repository-appear-in-my-browser-console-log)
+> FAQ: [Why Does This Repository Appear In My Browser Console Log?](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/FAQ.md#why-does-this-repository-appear-in-my-browser-console-log)
 
 ## 💘 Please Donate To Support This Project
 
@@ -22,7 +22,7 @@ Support is greatly appreciated, whether it comes from helping to maintain the li
 
 ## 👀 What's New?
 
-For details about updates and changes to this repository, take a look at the [CHANGELOG](./CHANGELOG.md).
+For details about updates and changes to this repository, take a look at the [Changelog](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/CHANGELOG.md).
 
 ## 🔍 Live Search
 
@@ -41,11 +41,11 @@ For details about updates and changes to this repository, take a look at the [CH
 
 ## 📜 Policy
 
-For detailed information on the policies governing the inclusion and exclusion of domains in this list, please refer to our [Domain List Policy](POLICY.md). This document outlines the criteria and procedures we follow to ensure the list is as accurate and comprehensive as possible.
+For detailed information on the policies governing the inclusion and exclusion of domains in this list, please refer to our [Domain List Policy](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/POLICY.md). This document outlines the criteria and procedures we follow to ensure the list is as accurate and comprehensive as possible.
 
 ## ✍️ Contributions
 
-For detailed instructions on how to contribute, including how to add or remove domains and sources, please refer to the [Contributing Guide](CONTRIBUTING.md).
+For detailed instructions on how to contribute, including how to add or remove domains and sources, please refer to the [Contributing Guide](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/CONTRIBUTING.md).
 
 ## 🫶 Code Of Conduct
 

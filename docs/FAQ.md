@@ -1,4 +1,4 @@
-# FAQ (Frequently Asked Questions)
+# ⁉️ FAQ (Frequently Asked Questions)
 
 ## Why Does This Repository Appear In My Browser Console Log?
 
