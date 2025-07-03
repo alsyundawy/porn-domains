@@ -1,9 +1,9 @@
 {
   "blocklist": {
-    "name": "block.8721e0be94.v8rpqp.txt",
-    "updated": null,
-    "lines": null,
-    "size": null
+    "name": "block.506a2739a4.rf85jk.txt",
+    "updated": "2025-07-03T07:19:37Z",
+    "lines": 736290,
+    "size": 15129164
   },
   "allowlist": {
     "name": "allow.61f9c283e3.eo7s0s.txt",
