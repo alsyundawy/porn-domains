@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-%230D0C22?style=flat-square&logo=buymeacoffee&logoColor=%23FFFFFF&label=DONATE&labelColor=%230D0C22&color=%23FFDD00&cacheSeconds=43200)](https://buymeacoffee.com/CodeAlDente) ![License](https://img.shields.io/github/license/Bon-Appetit/porn-domains?style=flat)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-%230D0C22?style=flat&logo=buymeacoffee&logoColor=%23FFFFFF&label=DONATE&labelColor=%230D0C22&color=%23FFDD00&cacheSeconds=43200)](https://buymeacoffee.com/CodeAlDente) ![Contributors](https://img.shields.io/badge/%F0%9F%91%A5-Contributors-null?style=flat&labelColor=white&color=purple&link=https://github.com/Bon-Appetit/porn-domains/blob/main/docs/CONTRIBUTORS.md) ![Sponsors](https://img.shields.io/badge/%F0%9F%92%8E-Sponsors-null?style=flat&labelColor=white&color=blue&link=https://github.com/Bon-Appetit/porn-domains/blob/main/docs/SPONSORS.md) ![License](https://img.shields.io/github/license/Bon-Appetit/porn-domains?style=flat)
 
 ![Watchers](https://img.shields.io/github/watchers/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200) ![Forks](https://img.shields.io/github/forks/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200) ![Repo stars](https://img.shields.io/github/stars/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200) ![Commit activity](https://img.shields.io/github/commit-activity/m/Bon-Appetit/porn-domains?style=flat-square&logo=github&cacheSeconds=43200)
 
