@@ -51,6 +51,18 @@ For detailed instructions on how to contribute, including how to add or remove d
 
 By participating in this project, you agree to abide by our [Code of Conduct](https://github.com/Bon-Appetit/porn-domains?tab=coc-ov-file). Be respectful, professional, and constructive in your interactions.
 
+## 👥 Contributors
+
+For a full list of everyone who has contributed to this project, see [Contributors](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/CONTRIBUTORS.md). Thank you to all contributors for your help, feedback, and reviews!
+
+## 💎 Sponsors
+
+This project is supported by generous sponsors. See [Sponsors](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/SPONSORS.md) for a list of supporters.
+
+## 🆘 Support
+
+Need help or have questions? Visit [Support](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/SUPPORT.md) for contact options and support resources.
+
 ## ⚠️ Disclaimer
 
 ### ❌ No Guarantee
