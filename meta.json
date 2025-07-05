@@ -1,11 +1,11 @@
 {
   "blocklist": {
-    "name": "block.b72667139d.5p3mt2.txt",
-    "updated": "2025-07-04T07:19:39Z",
-    "lines": 735769,
-    "lines_format": null,
-    "size": 15120405,
-    "size_format": null
+    "name": "block.c3a9ce821e.t4tj2w.txt",
+    "updated": "2025-07-05T07:19:26Z",
+    "lines": 736224,
+    "lines_format": "736224",
+    "size": 15129237,
+    "size_format": "14.4 MB"
   },
   "allowlist": {
     "name": "allow.61f9c283e3.lxwbbz.txt",
