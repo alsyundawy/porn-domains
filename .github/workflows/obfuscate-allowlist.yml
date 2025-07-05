@@ -7,12 +7,17 @@ on:
     paths:
       - allow.txt
 
+env:
+  LIST_FILE: allow.txt
+  LIST_FILE_BASE_NAME: allow
+  LIST_TYPE: allowlist
+
 concurrency:
   group: obfuscate-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  obfuscate-allowlist:
+  obfuscate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -30,64 +35,83 @@ jobs:
         run: |
           set -e
 
-          for file in allow.txt meta.json; do
+          for file in "${{ env.LIST_FILE }}" meta.json; do
             if [ ! -f "$file" ]; then
-              echo "File '$file' not found"
+              echo "[ERROR] File '$file' not found"
               exit 1
             fi
           done
 
-      - name: Generate new filename for allowlist
+      - name: Generate new filename for list file
         id: hash_and_rename
         run: |
           set -e
 
-          FILE_HASH=$(sha1sum allow.txt | awk '{print $1}' | cut -c1-10)
-          echo "File hash: $FILE_HASH"
+          # Get the hash of the files content and cut it to the first 10 characters
+          FILE_HASH=$(sha1sum "${{ env.LIST_FILE }}" | awk '{print $1}' | cut -c1-10)
+          echo "[DEBUG] File hash: $FILE_HASH"
 
+          # Generate a random hash for the filename
           RANDOM_HASH=$(openssl rand -base64 24 | tr -dc 'a-z0-9' | head -c 6)
-          echo "Random hash: $RANDOM_HASH"
+          echo "[DEBUG] Random hash: $RANDOM_HASH"
 
-          NEWFILE="allow.${FILE_HASH}.${RANDOM_HASH}.txt"
-          git mv allow.txt "$NEWFILE"
-          echo "newfile=$NEWFILE" >> $GITHUB_ENV
+          NEW_LIST_FILE_NAME="${{ env.LIST_FILE_BASE_NAME }}.${FILE_HASH}.${RANDOM_HASH}.txt"
+          echo "new_list_file_name=$NEW_LIST_FILE_NAME" >> $GITHUB_ENV
+          git mv "${{ env.LIST_FILE }}" "$NEW_LIST_FILE_NAME"
+          echo "[DEBUG] New filename: $NEW_LIST_FILE_NAME"
 
-      - name: Remove previous allowlist file
-        id: remove_old_allow
+      - name: Remove previous list file
+        id: remove_old_list_file
         run: |
           set -e
 
-          OLD=$(jq -r '.allowlist.name // empty' meta.json)
-          if [ -n "$OLD" ] && [ -f "$OLD" ]; then
-            echo "Removing old allowlist file: $OLD"
-            git rm "$OLD"
+          OLD_LIST_FILE_NAME=$(jq -r ".${{ env.LIST_TYPE }}.name // empty" meta.json)
+          if [ -n "$OLD_LIST_FILE_NAME" ] && [ -f "$OLD_LIST_FILE_NAME" ]; then
+            echo "[DEBUG] Removing old list file: $OLD_LIST_FILE_NAME"
+            git rm "$OLD_LIST_FILE_NAME"
           else
-            echo "No old allowlist file to remove"
+            echo "[DEBUG] No old list file to remove"
           fi
 
-      - name: Update meta.json with allowlist info
-        id: update_meta_allowlist
+      - name: Update meta.json with list file info
+        id: update_meta_file
         run: |
           set -e
 
-          NEWFILE="${{ env.newfile }}"
-          echo "New filename: $NEWFILE"
+          # Get last modification timestamp of the list file
+          FILE_TS=$(stat -c %Y "${{ env.new_list_file_name }}")
+          UPDATED=$(date -u -d "@$FILE_TS" +"%Y-%m-%dT%H:%M:%SZ")
+          echo "[DEBUG] Updated: $UPDATED"
 
-          ALLOW_TS=$(stat -c %Y "$NEWFILE")
-          UPDATED=$(date -u -d "@$ALLOW_TS" +"%Y-%m-%dT%H:%M:%SZ")
-          echo "Update: $UPDATED"
+          # Get number of lines in the file
+          LINES=$(grep -c '^' "${{ env.new_list_file_name }}")
+          echo "[DEBUG] Lines: $LINES"
 
-          LINES=$(grep -c '^' "$NEWFILE")
-          echo "Lines: $LINES"
+          # Get file size in bytes
+          SIZE=$(stat -c %s "${{ env.new_list_file_name }}")
+          echo "[DEBUG] Size: $SIZE"
 
-          SIZE=$(stat -c %s "$NEWFILE")
-          echo "Size: $SIZE"
+          # Format lines (e.g. "1,234 lines")
+          LINES_FORMAT=$(printf "%'d" "$LINES")
+          echo "[DEBUG] Lines format: $LINES_FORMAT"
 
-          jq --arg filename "$NEWFILE" \
+          # Format size (e.g. "2.1 KB") based on size
+          if [ "$SIZE" -lt 1024 ]; then
+            SIZE_FORMAT="${SIZE} B"
+          elif [ "$SIZE" -lt $((1024*1024)) ]; then
+            SIZE_FORMAT=$(awk "BEGIN {printf \"%.1f KB\", $SIZE/1024}")
+          else
+            SIZE_FORMAT=$(awk "BEGIN {printf \"%.1f MB\", $SIZE/1024/1024}")
+          fi
+          echo "[DEBUG] Size format: $SIZE_FORMAT"
+
+          jq --arg filename "${{ env.new_list_file_name }}" \
             --arg updated "$UPDATED" \
             --argjson lines "$LINES" \
+            --arg lines_format "$LINES_FORMAT" \
             --argjson size "$SIZE" \
-            '.allowlist = {name: $filename, updated: $updated, lines: $lines, size: $size}' \
+            --arg size_format "$SIZE_FORMAT" \
+            ".${{ env.LIST_TYPE }} = {name: \$filename, updated: \$updated, lines: \$lines, lines_format: \$lines_format, size: \$size, size_format: \$size_format}" \
             meta.json > meta.tmp && mv meta.tmp meta.json
 
       - name: Commit and push changes
@@ -95,10 +119,8 @@ jobs:
         run: |
           set -e
 
-          NEWFILE="${{ env.newfile }}"
-
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add "$NEWFILE" meta.json
-          git commit -m "[ACTION] Obfuscate allowlist" || echo "Nothing to commit"
+          git add "${{ env.new_list_file_name }}" meta.json
+          git commit -m "[ACTION] Obfuscate ${{ env.LIST_TYPE }}" || echo "Nothing to commit"
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
