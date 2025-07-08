@@ -1,4 +1,5 @@
 https://raw.githubusercontent.com/1stfine/open_clash/master/rule_provider/rule_porn.yaml
+https://raw.githubusercontent.com/4skinSkywalker/Anti-Porn-HOSTS-File/refs/heads/master/HOSTS.txt
 https://raw.githubusercontent.com/ajayyy/easylist/master/easylist_adult/adult_adservers.txt
 https://raw.githubusercontent.com/alexsannikov/adguardhome-filters/master/porn.txt
 https://raw.githubusercontent.com/ameshkov/easylist/master/easylist_adult/adult_adservers.txt
