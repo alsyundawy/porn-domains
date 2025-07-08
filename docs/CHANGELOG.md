@@ -1,6 +1,10 @@
 # 📝 Changelog
 
-This changelog documents changes to the structure, file handling, and background processes related to the domain list. Changes to the lists themselves, such as added or removed domains, are not included here as they can be reviewed directly from the [commit history](https://github.com/search?q=repo%3ABon-Appetit%2Fporn-domains+%22%5BAUTO%5D+Update+list%22&type=commits&s=committer-date&o=desc).
+This changelog documents changes to the structure, file handling, and background processes related to the domain list. Changes to the lists themselves, such as added or removed domains, are not included here.
+
+- See changes to the lists themselves in the [domain update commits](https://github.com/search?q=repo%3ABon-Appetit%2Fporn-domains+%22%5BAUTO%5D+Update+list%22&type=commits&s=committer-date&o=desc)
+- Browse [source additions and removals](https://github.com/Bon-Appetit/porn-domains/issues?q=label%3A%22add%20source%22%20OR%20label%3A%22remove%20source%22)
+- Browse [individual domain reports](https://github.com/Bon-Appetit/porn-domains/issues?q=label%3A%22add%20domain%22%20OR%20label%3A%22bulk%20domain%20report%22%20OR%20label%3A%22remove%20domain%22)
 
 **Format Of Date Is: YYYY-MM-DD**
 
