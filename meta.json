@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.6e50929c11.eg7htx.txt",
-    "updated": "2025-07-15T07:19:30Z",
-    "lines": 699508,
-    "lines_format": "699,508",
-    "size": 14448387,
+    "name": "block.07eeed41ad.khfv9v.txt",
+    "updated": "2025-07-16T07:19:36Z",
+    "lines": 699454,
+    "lines_format": "699,454",
+    "size": 14453375,
     "size_format": "13.8 MB"
   },
   "allowlist": {
