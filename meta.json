@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.b68a54db9a.bnpjhw.txt",
-    "updated": "2025-07-18T07:19:21Z",
-    "lines": 699096,
-    "lines_format": "699,096",
-    "size": 14443956,
+    "name": "block.30e5c54495.5pk0dd.txt",
+    "updated": "2025-07-19T07:19:33Z",
+    "lines": 698914,
+    "lines_format": "698,914",
+    "size": 14444471,
     "size_format": "13.8 MB"
   },
   "allowlist": {
