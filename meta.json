@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.3651e193c0.mb2a1s.txt",
-    "updated": "2025-07-20T07:19:54Z",
-    "lines": 699991,
-    "lines_format": "699,991",
-    "size": 14466569,
+    "name": "block.d59a97616f.c4dopb.txt",
+    "updated": "2025-07-21T07:20:12Z",
+    "lines": 698461,
+    "lines_format": "698,461",
+    "size": 14437628,
     "size_format": "13.8 MB"
   },
   "allowlist": {
