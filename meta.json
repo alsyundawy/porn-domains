@@ -1,11 +1,11 @@
 {
   "blocklist": {
-    "name": "block.c100442606.yq1ku6.txt",
-    "updated": "2025-07-28T07:20:27Z",
-    "lines": 735554,
-    "lines_format": "735,554",
-    "size": 15117611,
-    "size_format": "14.4 MB"
+    "name": "block.0cb75b98bf.590fnw.txt",
+    "updated": "2025-07-29T07:20:08Z",
+    "lines": 738793,
+    "lines_format": "738,793",
+    "size": 15169972,
+    "size_format": "14.5 MB"
   },
   "allowlist": {
     "name": "allow.61f9c283e3.3jlnt0.txt",
