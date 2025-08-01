@@ -10,9 +10,6 @@
 
 This list compiles a variety of domains related to adult content, primarily focusing on pornographic websites. Instead of creating yet another list from scratch, it aggregates the excellent work done by others into one big list.
 
-> [!IMPORTANT]
-> ⚠️ **LICENSE UPDATE**: Please note that starting August 1st, 2025, this project will transition from the `MIT license` to the `Creative Commons BY-SA 4.0` license. [Learn more about this change](https://github.com/Bon-Appetit/porn-domains/discussions/79).
-
 > [!NOTE]
 > FAQ: [Why Does This Repository Appear In My Browser Console Log?](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/FAQ.md#why-does-this-repository-appear-in-my-browser-console-log)
 
@@ -62,6 +59,18 @@ This project is supported by generous sponsors. See [Sponsors](https://github.co
 ## 🆘 Support
 
 Need help or have questions? Visit [Support](https://github.com/Bon-Appetit/porn-domains/blob/main/docs/SUPPORT.md) for contact options and support resources.
+
+## License
+
+This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license. For more information, please read the full [LICENSE](https://github.com/Bon-Appetit/porn-domains/blob/main/LICENSE) file.
+
+If you use or share this list, please credit the project as follows (or in a similar way):
+
+**Markdown:**
+
+```markdown
+[Bon-Appetit/porn-domains](https://github.com/Bon-Appetit/porn-domains) is licensed under [CC BY-SA 4.0](https://github.com/Bon-Appetit/porn-domains/blob/main/LICENSE).
+```
 
 ## ⚠️ Disclaimer
 
