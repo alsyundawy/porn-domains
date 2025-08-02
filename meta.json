@@ -1,11 +1,11 @@
 {
   "blocklist": {
-    "name": "block.893da1abef.4udivi.txt",
-    "updated": "2025-08-01T07:20:19Z",
-    "lines": 738214,
-    "lines_format": "738,214",
-    "size": 15157219,
-    "size_format": "14.5 MB"
+    "name": "block.898fb13ca8.4p4if2.txt",
+    "updated": "2025-08-02T07:19:53Z",
+    "lines": 737859,
+    "lines_format": "737,859",
+    "size": 15150312,
+    "size_format": "14.4 MB"
   },
   "allowlist": {
     "name": "allow.61f9c283e3.zux194.txt",
