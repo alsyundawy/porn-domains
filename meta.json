@@ -1,11 +1,11 @@
 {
   "blocklist": {
-    "name": "block.225e546435.733n5d.txt",
-    "updated": "2025-08-04T07:20:04Z",
-    "lines": 737652,
-    "lines_format": "737,652",
-    "size": 15146798,
-    "size_format": "14.4 MB"
+    "name": "block.a4c3638bb1.voh886.txt",
+    "updated": "2025-08-05T07:20:44Z",
+    "lines": 745047,
+    "lines_format": "745,047",
+    "size": 15288269,
+    "size_format": "14.6 MB"
   },
   "allowlist": {
     "name": "allow.61f9c283e3.mar0h8.txt",
