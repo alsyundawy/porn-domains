@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.1f157e14fe.g3q2kv.txt",
-    "updated": "2025-08-08T07:19:59Z",
-    "lines": 744781,
-    "lines_format": "744,781",
-    "size": 15283133,
+    "name": "block.90eb8eddaf.jsztlc.txt",
+    "updated": "2025-08-09T07:20:02Z",
+    "lines": 744628,
+    "lines_format": "744,628",
+    "size": 15282616,
     "size_format": "14.6 MB"
   },
   "allowlist": {
