@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.c679fca962.ns80nq.txt",
-    "updated": "2025-08-10T07:20:18Z",
-    "lines": 744435,
-    "lines_format": "744,435",
-    "size": 15278893,
+    "name": "block.255db9f311.h9yh28.txt",
+    "updated": "2025-08-11T07:19:37Z",
+    "lines": 744267,
+    "lines_format": "744,267",
+    "size": 15277773,
     "size_format": "14.6 MB"
   },
   "allowlist": {
