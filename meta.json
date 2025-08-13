@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.3b8952cb34.7bozz6.txt",
-    "updated": "2025-08-12T07:19:43Z",
-    "lines": 747616,
-    "lines_format": "747,616",
-    "size": 15338525,
+    "name": "block.7b345de1ab.q8dbvz.txt",
+    "updated": "2025-08-13T07:19:48Z",
+    "lines": 747239,
+    "lines_format": "747,239",
+    "size": 15330530,
     "size_format": "14.6 MB"
   },
   "allowlist": {
