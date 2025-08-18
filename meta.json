@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.db2605e5e1.ac595i.txt",
-    "updated": "2025-08-17T07:20:05Z",
-    "lines": 745715,
-    "lines_format": "745,715",
-    "size": 15306955,
+    "name": "block.c24d4cfe8a.i514hp.txt",
+    "updated": "2025-08-18T07:20:03Z",
+    "lines": 746475,
+    "lines_format": "746,475",
+    "size": 15319535,
     "size_format": "14.6 MB"
   },
   "allowlist": {
