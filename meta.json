@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.c24d4cfe8a.i514hp.txt",
-    "updated": "2025-08-18T07:20:03Z",
-    "lines": 746475,
-    "lines_format": "746,475",
-    "size": 15319535,
+    "name": "block.1dd99b42e0.unh9ab.txt",
+    "updated": "2025-08-19T07:20:15Z",
+    "lines": 748228,
+    "lines_format": "748,228",
+    "size": 15352520,
     "size_format": "14.6 MB"
   },
   "allowlist": {
