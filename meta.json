@@ -1,10 +1,10 @@
 {
   "blocklist": {
-    "name": "block.0f7e420459.oqddl5.txt",
-    "updated": "2025-08-21T07:20:03Z",
-    "lines": 748238,
-    "lines_format": "748,238",
-    "size": 15353183,
+    "name": "block.af28d2e460.egz2f0.txt",
+    "updated": "2025-08-22T07:20:27Z",
+    "lines": 747582,
+    "lines_format": "747,582",
+    "size": 15340006,
     "size_format": "14.6 MB"
   },
   "allowlist": {
